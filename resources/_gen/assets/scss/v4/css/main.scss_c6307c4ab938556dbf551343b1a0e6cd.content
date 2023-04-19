@@ -8210,7 +8210,7 @@ hr {
   height: 0;
   overflow: visible; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, .about .date, .syllabus .date, .backlog .date, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: .5rem; }
 
@@ -8412,7 +8412,7 @@ template {
 [hidden] {
   display: none !important; }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, .about .date, .syllabus .date, .backlog .date, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: .5rem;
   font-weight: 500;
   line-height: 1.2; }
@@ -8420,7 +8420,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 h1, .h1 {
   font-size: 2.5rem; }
 
-h2, .h2 {
+h2, .about .date, .syllabus .date, .backlog .date, .h2 {
   font-size: 2rem; }
 
 h3, .h3 {
@@ -9785,12 +9785,12 @@ a.btn.disabled, fieldset:disabled a.btn {
   background-color: #007bff;
   border-color: #007bff; }
 
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary.active:not(:disabled):not(.disabled), .show > .btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: #0062cc;
   border-color: #005cbf; }
 
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary.active:not(:disabled):not(.disabled):focus, .show > .btn-primary.dropdown-toggle:focus {
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
 
 .btn-secondary {
@@ -9811,12 +9811,12 @@ a.btn.disabled, fieldset:disabled a.btn {
   background-color: #6c757d;
   border-color: #6c757d; }
 
-.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary.active:not(:disabled):not(.disabled), .show > .btn-secondary.dropdown-toggle {
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
   color: #fff;
   background-color: #545b62;
   border-color: #4e555b; }
 
-.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary.active:not(:disabled):not(.disabled):focus, .show > .btn-secondary.dropdown-toggle:focus {
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5); }
 
 .btn-success {
@@ -9837,12 +9837,12 @@ a.btn.disabled, fieldset:disabled a.btn {
   background-color: #28a745;
   border-color: #28a745; }
 
-.btn-success:not(:disabled):not(.disabled):active, .btn-success.active:not(:disabled):not(.disabled), .show > .btn-success.dropdown-toggle {
+.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .show > .btn-success.dropdown-toggle {
   color: #fff;
   background-color: #1e7e34;
   border-color: #1c7430; }
 
-.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success.active:not(:disabled):not(.disabled):focus, .show > .btn-success.dropdown-toggle:focus {
+.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .show > .btn-success.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5); }
 
 .btn-info {
@@ -9863,12 +9863,12 @@ a.btn.disabled, fieldset:disabled a.btn {
   background-color: #17a2b8;
   border-color: #17a2b8; }
 
-.btn-info:not(:disabled):not(.disabled):active, .btn-info.active:not(:disabled):not(.disabled), .show > .btn-info.dropdown-toggle {
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show > .btn-info.dropdown-toggle {
   color: #fff;
   background-color: #117a8b;
   border-color: #10707f; }
 
-.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info.active:not(:disabled):not(.disabled):focus, .show > .btn-info.dropdown-toggle:focus {
+.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus, .show > .btn-info.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5); }
 
 .btn-warning {
@@ -9889,12 +9889,12 @@ a.btn.disabled, fieldset:disabled a.btn {
   background-color: #ffc107;
   border-color: #ffc107; }
 
-.btn-warning:not(:disabled):not(.disabled):active, .btn-warning.active:not(:disabled):not(.disabled), .show > .btn-warning.dropdown-toggle {
+.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .show > .btn-warning.dropdown-toggle {
   color: #212529;
   background-color: #d39e00;
   border-color: #c69500; }
 
-.btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning.active:not(:disabled):not(.disabled):focus, .show > .btn-warning.dropdown-toggle:focus {
+.btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-warning.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5); }
 
 .btn-danger {
@@ -9915,12 +9915,12 @@ a.btn.disabled, fieldset:disabled a.btn {
   background-color: #dc3545;
   border-color: #dc3545; }
 
-.btn-danger:not(:disabled):not(.disabled):active, .btn-danger.active:not(:disabled):not(.disabled), .show > .btn-danger.dropdown-toggle {
+.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle {
   color: #fff;
   background-color: #bd2130;
   border-color: #b21f2d; }
 
-.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger.active:not(:disabled):not(.disabled):focus, .show > .btn-danger.dropdown-toggle:focus {
+.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-danger.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5); }
 
 .btn-light {
@@ -9941,12 +9941,12 @@ a.btn.disabled, fieldset:disabled a.btn {
   background-color: #f8f9fa;
   border-color: #f8f9fa; }
 
-.btn-light:not(:disabled):not(.disabled):active, .btn-light.active:not(:disabled):not(.disabled), .show > .btn-light.dropdown-toggle {
+.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle {
   color: #212529;
   background-color: #dae0e5;
   border-color: #d3d9df; }
 
-.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light.active:not(:disabled):not(.disabled):focus, .show > .btn-light.dropdown-toggle:focus {
+.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .show > .btn-light.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5); }
 
 .btn-dark {
@@ -9967,12 +9967,12 @@ a.btn.disabled, fieldset:disabled a.btn {
   background-color: #343a40;
   border-color: #343a40; }
 
-.btn-dark:not(:disabled):not(.disabled):active, .btn-dark.active:not(:disabled):not(.disabled), .show > .btn-dark.dropdown-toggle {
+.btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .show > .btn-dark.dropdown-toggle {
   color: #fff;
   background-color: #1d2124;
   border-color: #171a1d; }
 
-.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark.active:not(:disabled):not(.disabled):focus, .show > .btn-dark.dropdown-toggle:focus {
+.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5); }
 
 .btn-outline-primary {
@@ -9991,12 +9991,12 @@ a.btn.disabled, fieldset:disabled a.btn {
   color: #007bff;
   background-color: transparent; }
 
-.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary.active:not(:disabled):not(.disabled), .show > .btn-outline-primary.dropdown-toggle {
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff; }
 
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-primary.dropdown-toggle:focus {
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
 
 .btn-outline-secondary {
@@ -10015,12 +10015,12 @@ a.btn.disabled, fieldset:disabled a.btn {
   color: #6c757d;
   background-color: transparent; }
 
-.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary.active:not(:disabled):not(.disabled), .show > .btn-outline-secondary.dropdown-toggle {
+.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d; }
 
-.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-secondary.dropdown-toggle:focus {
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5); }
 
 .btn-outline-success {
@@ -10039,12 +10039,12 @@ a.btn.disabled, fieldset:disabled a.btn {
   color: #28a745;
   background-color: transparent; }
 
-.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success.active:not(:disabled):not(.disabled), .show > .btn-outline-success.dropdown-toggle {
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .show > .btn-outline-success.dropdown-toggle {
   color: #fff;
   background-color: #28a745;
   border-color: #28a745; }
 
-.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-success.dropdown-toggle:focus {
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-success.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5); }
 
 .btn-outline-info {
@@ -10063,12 +10063,12 @@ a.btn.disabled, fieldset:disabled a.btn {
   color: #17a2b8;
   background-color: transparent; }
 
-.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info.active:not(:disabled):not(.disabled), .show > .btn-outline-info.dropdown-toggle {
+.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active, .show > .btn-outline-info.dropdown-toggle {
   color: #fff;
   background-color: #17a2b8;
   border-color: #17a2b8; }
 
-.btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-info.dropdown-toggle:focus {
+.btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-info.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5); }
 
 .btn-outline-warning {
@@ -10087,12 +10087,12 @@ a.btn.disabled, fieldset:disabled a.btn {
   color: #ffc107;
   background-color: transparent; }
 
-.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning.active:not(:disabled):not(.disabled), .show > .btn-outline-warning.dropdown-toggle {
+.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .show > .btn-outline-warning.dropdown-toggle {
   color: #212529;
   background-color: #ffc107;
   border-color: #ffc107; }
 
-.btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-warning.dropdown-toggle:focus {
+.btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-warning.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5); }
 
 .btn-outline-danger {
@@ -10111,12 +10111,12 @@ a.btn.disabled, fieldset:disabled a.btn {
   color: #dc3545;
   background-color: transparent; }
 
-.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger.active:not(:disabled):not(.disabled), .show > .btn-outline-danger.dropdown-toggle {
+.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active, .show > .btn-outline-danger.dropdown-toggle {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545; }
 
-.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-danger.dropdown-toggle:focus {
+.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-danger.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5); }
 
 .btn-outline-light {
@@ -10135,12 +10135,12 @@ a.btn.disabled, fieldset:disabled a.btn {
   color: #f8f9fa;
   background-color: transparent; }
 
-.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light.active:not(:disabled):not(.disabled), .show > .btn-outline-light.dropdown-toggle {
+.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .show > .btn-outline-light.dropdown-toggle {
   color: #212529;
   background-color: #f8f9fa;
   border-color: #f8f9fa; }
 
-.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-light.dropdown-toggle:focus {
+.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-light.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
 
 .btn-outline-dark {
@@ -10159,12 +10159,12 @@ a.btn.disabled, fieldset:disabled a.btn {
   color: #343a40;
   background-color: transparent; }
 
-.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark.active:not(:disabled):not(.disabled), .show > .btn-outline-dark.dropdown-toggle {
+.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active, .show > .btn-outline-dark.dropdown-toggle {
   color: #fff;
   background-color: #343a40;
   border-color: #343a40; }
 
-.btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-dark.dropdown-toggle:focus {
+.btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-dark.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
 .btn-link {
@@ -10203,7 +10203,7 @@ a.btn.disabled, fieldset:disabled a.btn {
 .btn-block + .btn-block {
   margin-top: .5rem; }
 
-input.btn-block[type="submit"], input.btn-block[type="reset"], input.btn-block[type="button"] {
+input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
   width: 100%; }
 
 .fade {
@@ -14857,10 +14857,10 @@ a.text-dark:hover, a.text-dark:focus {
     display: table-header-group; }
   tr, img {
     page-break-inside: avoid; }
-  p, h2, h3 {
+  p, h2, .about .date, .syllabus .date, .backlog .date, h3 {
     orphans: 3;
     widows: 3; }
-  h2, h3 {
+  h2, .about .date, .syllabus .date, .backlog .date, h3 {
     page-break-after: avoid; }
   @page {
     size: a3; }
@@ -14915,23 +14915,22 @@ a.text-dark:hover, a.text-dark:focus {
   --gap-9: calc(var(--gap) * 9);
   --gap-10: calc(var(--gap) * 10);
   --gap-half: calc(var(--gap) / 2);
-  --gap-quart: calc(var(--gap) / 4); }
+  --gap-quart: calc(var(--gap) / 4);
+  --bg-image: url("https://praxis.nyc/images/dot-bg.svg"); }
 
-.dark-mode:root, .redux:root {
+:root.dark-mode, .redux:root {
   --color-bg: #281831;
   --color-fg: white;
   --color-medium: white;
   --color-dark: #999;
   --color-accent: #EDB6D3;
-  --color-accent-2: purple; }
+  --color-accent-2: purple;
+  --bg-image: url("../images/dot-bg-dark-mode.svg"); }
 
-.dark-mode:root body, .redux:root body {
-  background-image: url("../images/dot-bg-dark-mode.svg"); }
-
-.dark-mode:root section.session .counter:before, .redux:root section.session .counter:before {
+:root.dark-mode section.session .counter:before, .redux:root section.session .counter:before {
   background-color: rgba(255, 255, 255, 0.3); }
 
-.dark-mode:root .cover, .redux:root .cover {
+:root.dark-mode .cover, .redux:root .cover {
   display: none; }
 
 .box-content {
@@ -14945,7 +14944,7 @@ a.text-dark:hover, a.text-dark:focus {
 @media screen and (min-width: 700px) {
   .box-content {
     --logo-size: 100px;
-    width: var(--container);
+    max-width: 700px;
     padding: var(--gap-2);
     grid-template-columns: var(--logo-size) 1fr;
     grid-column-gap: var(--gap-2); }
@@ -14978,6 +14977,14 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: 10px; }
   .box-content aside footer.footer {
     display: none; } }
+
+@media screen and (max-width: 700px) {
+  .category-menu {
+    width: 100vw; } }
+
+@media screen and (max-width: 640px) {
+  .category-menu {
+    width: 90vw; } }
 
 @media screen and (min-width: 700px) {
   .redux .grid {
@@ -15172,7 +15179,7 @@ html.firefox .list header.header h1 {
   height: 0px;
   background: none !important; }
 
-.list header.header h2 {
+.list header.header h2, .list header.header .about .date, .about .list header.header .date, .list header.header .syllabus .date, .syllabus .list header.header .date, .list header.header .backlog .date, .backlog .list header.header .date {
   text-transform: lowercase;
   font-weight: normal; }
 
@@ -15513,12 +15520,20 @@ body {
   font-family: var(--font);
   padding: 20px;
   margin: 0;
-  background-image: url("../images/dot-bg.svg");
   font-weight: normal;
-  background-attachment: fixed;
-  background-color: var(--color-bg);
   font-size: 18px;
   color: var(--color-fg); }
+
+body .background {
+  background-image: var(--bg-image);
+  background-color: var(--color-bg);
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: -100; }
 
 a:not(.btn) {
   color: var(--color-fg);
@@ -15575,7 +15590,7 @@ code {
   font-family: Hasklig;
   color: var(--color-bg); }
 
-html:not(.slide) h1, html:not(.slide) h2, html:not(.slide) h3, html:not(.slide) h4 {
+html:not(.slide) h1, html:not(.slide) h2, html:not(.slide) .about .date, .about html:not(.slide) .date, html:not(.slide) .syllabus .date, .syllabus html:not(.slide) .date, html:not(.slide) .backlog .date, .backlog html:not(.slide) .date, html:not(.slide) h3, html:not(.slide) h4 {
   display: inline;
   background: var(--color-fg);
   box-shadow: 10px 0 0 var(--color-fg), -10px 0 0 var(--color-fg);
@@ -15587,10 +15602,10 @@ html:not(.slide) h1, html:not(.slide) h2, html:not(.slide) h3, html:not(.slide) 
   text-transform: uppercase;
   font-weight: bold; }
 
-html.firefox html:not(.slide) h1, html.firefox html:not(.slide) h2, html.firefox html:not(.slide) h3, html.firefox html:not(.slide) h4 {
+html.firefox html:not(.slide) h1, html.firefox html:not(.slide) h2, html.firefox html:not(.slide) .about .date, .about html.firefox html:not(.slide) .date, html.firefox html:not(.slide) .syllabus .date, .syllabus html.firefox html:not(.slide) .date, html.firefox html:not(.slide) .backlog .date, .backlog html.firefox html:not(.slide) .date, html.firefox html:not(.slide) h3, html.firefox html:not(.slide) h4 {
   padding-top: 10px; }
 
-html:not(.slide) h1::after, html:not(.slide) h2::after, html:not(.slide) h3::after, html:not(.slide) h4::after {
+html:not(.slide) h1::after, html:not(.slide) h2::after, html:not(.slide) .about .date::after, .about html:not(.slide) .date::after, html:not(.slide) .syllabus .date::after, .syllabus html:not(.slide) .date::after, html:not(.slide) .backlog .date::after, .backlog html:not(.slide) .date::after, html:not(.slide) h3::after, html:not(.slide) h4::after {
   content: "";
   display: block;
   height: var(--gap-2);
@@ -15617,7 +15632,7 @@ body.home header.header h1::after {
 h1 {
   font-size: 45px; }
 
-h2 {
+h2, .about .date, .syllabus .date, .backlog .date {
   font-size: var(--gap-2); }
 
 h3 {
@@ -15627,7 +15642,7 @@ header.header {
   margin-top: 8px;
   margin-bottom: var(--gap-2); }
 
-header.header h1, header.header h2 {
+header.header h1, header.header h2, header.header .about .date, .about header.header .date, header.header .syllabus .date, .syllabus header.header .date, header.header .backlog .date, .backlog header.header .date {
   display: inline;
   background: var(--color-fg);
   box-shadow: 10px 0 0 var(--color-fg), -10px 0 0 var(--color-fg);
@@ -15638,29 +15653,23 @@ header.header h1, header.header h2 {
   color: var(--color-bg);
   text-transform: uppercase; }
 
-html.firefox header.header h1, html.firefox header.header h2 {
+html.firefox header.header h1, html.firefox header.header h2, html.firefox header.header .about .date, .about html.firefox header.header .date, html.firefox header.header .syllabus .date, .syllabus html.firefox header.header .date, html.firefox header.header .backlog .date, .backlog html.firefox header.header .date {
   padding-top: 10px; }
 
-header.header h1::after, header.header h2::after {
+header.header h1::after, header.header h2::after, header.header .about .date::after, .about header.header .date::after, header.header .syllabus .date::after, .syllabus header.header .date::after, header.header .backlog .date::after, .backlog header.header .date::after {
   content: "";
   display: block;
   height: 5px;
   background: none !important; }
 
-header.header ul.slogan {
-  list-style: none;
-  margin: 0px !important;
-  padding: 0px !important;
-  border: none;
-  background: transparent; }
+header.header .slogan {
+  text-transform: capitalize; }
 
-header.header ul.slogan:focus {
-  outline-width: 0;
-  outline: none;
-  outline-color: transparent;
-  outline-style: none; }
+@media screen and (min-width: 700px) {
+  header.header .slogan {
+    width: 50px; } }
 
-header.header ul.slogan li {
+header.header .slogan p {
   display: inline;
   background: var(--color-fg);
   box-shadow: 10px 0 0 var(--color-fg), -10px 0 0 var(--color-fg);
@@ -15668,14 +15677,15 @@ header.header ul.slogan li {
   padding-bottom: 5px;
   padding-top: 7px;
   box-decoration-break: clone;
+  line-height: 150%;
   color: var(--color-bg);
   font-weight: normal;
   font-size: 22px; }
 
-html.firefox header.header ul.slogan li {
+html.firefox header.header .slogan p {
   padding-top: 10px; }
 
-header.header ul.slogan li::after {
+header.header .slogan p::after {
   content: "";
   display: block;
   height: 0px;
@@ -15824,7 +15834,7 @@ section.feature-list:last-of-type, section.status:last-of-type {
 section.status {
   padding-top: var(--gap-2); }
 
-section.status h1, section.status h2, section.status h3, section.status h4, section.status h4 {
+section.status h1, section.status h2, section.status .about .date, .about section.status .date, section.status .syllabus .date, .syllabus section.status .date, section.status .backlog .date, .backlog section.status .date, section.status h3, section.status h4 {
   display: inline;
   background: var(--color-bg);
   box-shadow: 10px 0 0 var(--color-bg), -10px 0 0 var(--color-bg);
@@ -15834,10 +15844,10 @@ section.status h1, section.status h2, section.status h3, section.status h4, sect
   box-decoration-break: clone;
   color: var(--color-fg); }
 
-html.firefox section.status h1, html.firefox section.status h2, html.firefox section.status h3, html.firefox section.status h4, html.firefox section.status h4 {
+html.firefox section.status h1, html.firefox section.status h2, html.firefox section.status .about .date, .about html.firefox section.status .date, html.firefox section.status .syllabus .date, .syllabus html.firefox section.status .date, html.firefox section.status .backlog .date, .backlog html.firefox section.status .date, html.firefox section.status h3, html.firefox section.status h4 {
   padding-top: 10px; }
 
-section.status h1::after, section.status h2::after, section.status h3::after, section.status h4::after, section.status h4::after {
+section.status h1::after, section.status h2::after, section.status .about .date::after, .about section.status .date::after, section.status .syllabus .date::after, .syllabus section.status .date::after, section.status .backlog .date::after, .backlog section.status .date::after, section.status h3::after, section.status h4::after {
   content: "";
   display: block;
   height: var(--gap-2);
@@ -16256,6 +16266,114 @@ blockquote:before {
   margin-top: -10px;
   padding-right: var(--gap); }
 
+form.tinyletter {
+  margin-top: var(--gap);
+  padding-top: var(--gap);
+  padding-right: var(--gap);
+  background-color: var(--color-bg);
+  display: grid;
+  grid-template-columns: 1fr 150px; }
+
+form.tinyletter input {
+  height: 50px;
+  align-self: flex-start;
+  padding: var(--gap) var(--gap-2) !important; }
+
+form.tinyletter input.input {
+  height: 75px;
+  margin-top: -13px; }
+
+in form.tinyletter input.button {
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0; }
+
+.diagram {
+  margin-bottom: 40px;
+  margin-left: -10px;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  width: 520px; }
+
+@media screen and (min-width: 700px) {
+  .diagram {
+    padding: 10px;
+    padding-bottom: 5px;
+    background-color: white;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); }
+  .diagram:hover {
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); } }
+
+@media screen and (max-width: 700px) {
+  .diagram {
+    width: 100%; } }
+
+.diagram .original {
+  text-decoration: none;
+  background-color: #ccc;
+  padding: 10px 15px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  position: absolute;
+  font-size: 70%;
+  font-weight: bold; }
+
+.diagram .original:before {
+  content: "View source"; }
+
+@media screen and (max-width: 700px) {
+  .diagram .original {
+    border: solid 1px black;
+    -webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1); }
+  .diagram .original:hover {
+    border: solid 1px purple;
+    -webkit-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2); }
+  .diagram .original:before {
+    content: "Click to view source on figma"; } }
+
+.diagram .scroll {
+  overflow-y: hidden;
+  flex-wrap: no-wrap;
+  overflow-x: auto;
+  padding-bottom: 15px; }
+
+@media screen and (max-width: 700px) {
+  .diagram .scroll img {
+    display: none; } }
+
+p.pending:before {
+  content: "Pending:";
+  font-size: 70%;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #eee; }
+
 section.category {
   margin-bottom: var(--gap-2); }
 
@@ -16313,14 +16431,6 @@ section.category .category-menu {
   flex-wrap: no-wrap;
   overflow-x: auto;
   max-width: 520px; }
-
-@media screen and (min-width: 800px) {
-  section.category .category-menu {
-    max-width: 520px; } }
-
-@media screen and (max-width: 800px) {
-  section.category .category-menu {
-    max-width: 80vw; } }
 
 section.category .category-menu .category-post {
   flex: 0 0 auto;
@@ -16511,7 +16621,7 @@ html.firefox .category-menu .category-post .title {
 .team section.group:last-of-type {
   border-bottom: solid 3px var(--color-fg); }
 
-.team section.group h1, .team section.group h2, .team section.group h3 {
+.team section.group h1, .team section.group h2, .team section.group .about .date, .about .team section.group .date, .team section.group .syllabus .date, .syllabus .team section.group .date, .team section.group .backlog .date, .backlog .team section.group .date, .team section.group h3 {
   display: inline;
   background: var(--color-bg);
   box-shadow: 10px 0 0 var(--color-bg), -10px 0 0 var(--color-bg);
@@ -16521,10 +16631,10 @@ html.firefox .category-menu .category-post .title {
   box-decoration-break: clone;
   color: var(--color-fg); }
 
-html.firefox .team section.group h1, html.firefox .team section.group h2, html.firefox .team section.group h3 {
+html.firefox .team section.group h1, html.firefox .team section.group h2, html.firefox .team section.group .about .date, .about html.firefox .team section.group .date, html.firefox .team section.group .syllabus .date, .syllabus html.firefox .team section.group .date, html.firefox .team section.group .backlog .date, .backlog html.firefox .team section.group .date, html.firefox .team section.group h3 {
   padding-top: 10px; }
 
-.team section.group h1::after, .team section.group h2::after, .team section.group h3::after {
+.team section.group h1::after, .team section.group h2::after, .team section.group .about .date::after, .about .team section.group .date::after, .team section.group .syllabus .date::after, .syllabus .team section.group .date::after, .team section.group .backlog .date::after, .backlog .team section.group .date::after, .team section.group h3::after {
   content: "";
   display: block;
   height: 0;
@@ -16679,6 +16789,78 @@ html.firefox .team .member .links {
   position: absolute;
   height: var(--pdf);
   width: calc(var(--pdf) * var(--pdf-ratio)); }
+
+.cyborg .instructions {
+  display: none; }
+
+.about, .syllabus, .backlog {
+  margin: 50px 0 !important;
+  border-top: solid 3px black;
+  padding-top: 30px; }
+
+.about .date, .syllabus .date, .backlog .date {
+  font-size: 15px; }
+
+.about .date a, .about .date a:hover, .syllabus .date a, .syllabus .date a:hover, .backlog .date a, .backlog .date a:hover {
+  color: white; }
+
+.syllabus .session {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 100px 1fr; }
+
+.syllabus .session:not(:first-of-type) {
+  margin-top: 50px; }
+
+.syllabus .count {
+  font-size: 80px;
+  padding-top: 20px;
+  color: white !important;
+  line-height: 90%;
+  width: 100px !important;
+  height: 100px !important;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  width: var(--logo-size);
+  height: var(--logo-size);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: var(--color-fg); }
+
+.session ul {
+  padding: 20px; }
+
+.session ul li {
+  display: inline;
+  background: var(--color-bg);
+  box-shadow: 10px 0 0 var(--color-bg), -10px 0 0 var(--color-bg);
+  position: relative;
+  padding-bottom: 5px;
+  padding-top: 7px;
+  box-decoration-break: clone; }
+
+html.firefox .session ul li {
+  padding-top: 10px; }
+
+.session ul li::after {
+  content: "";
+  display: block;
+  height: 20px;
+  background: none !important; }
+
+.session ul li .sig {
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+  font-size: 70%;
+  margin-left: 10px; }
 
 /*!
 * reveal.js 4.0.2
@@ -17072,14 +17254,14 @@ html.reveal-full-page {
   opacity: 0;
   visibility: hidden; }
 
-.reveal.has-horizontal-slides[data-navigation-mode=linear] .navigate-down, .reveal.has-horizontal-slides[data-navigation-mode=linear] .navigate-up {
+.reveal[data-navigation-mode=linear].has-horizontal-slides .navigate-down, .reveal[data-navigation-mode=linear].has-horizontal-slides .navigate-up {
   display: none; }
 
-.reveal:not(.has-vertical-slides) .controls .navigate-left, .reveal.has-horizontal-slides[data-navigation-mode=linear] .navigate-left {
+.reveal:not(.has-vertical-slides) .controls .navigate-left, .reveal[data-navigation-mode=linear].has-horizontal-slides .navigate-left {
   bottom: 1.4em;
   right: 5.5em; }
 
-.reveal:not(.has-vertical-slides) .controls .navigate-right, .reveal.has-horizontal-slides[data-navigation-mode=linear] .navigate-right {
+.reveal:not(.has-vertical-slides) .controls .navigate-right, .reveal[data-navigation-mode=linear].has-horizontal-slides .navigate-right {
   bottom: 1.4em;
   right: .5em; }
 
@@ -17256,94 +17438,94 @@ html.reveal-full-page {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.reveal .slides > section.past[data-transition=slide], .reveal .slides > section.past[data-transition~=slide-out], .reveal.slide .slides > section.past:not([data-transition]) {
+.reveal .slides > section[data-transition=slide].past, .reveal .slides > section[data-transition~=slide-out].past, .reveal.slide .slides > section:not([data-transition]).past {
   transform: translate(-150%, 0); }
 
-.reveal .slides > section.future[data-transition=slide], .reveal .slides > section.future[data-transition~=slide-in], .reveal.slide .slides > section.future:not([data-transition]) {
+.reveal .slides > section[data-transition=slide].future, .reveal .slides > section[data-transition~=slide-in].future, .reveal.slide .slides > section:not([data-transition]).future {
   transform: translate(150%, 0); }
 
-.reveal .slides > section > section.past[data-transition=slide], .reveal .slides > section > section.past[data-transition~=slide-out], .reveal.slide .slides > section > section.past:not([data-transition]) {
+.reveal .slides > section > section[data-transition=slide].past, .reveal .slides > section > section[data-transition~=slide-out].past, .reveal.slide .slides > section > section:not([data-transition]).past {
   transform: translate(0, -150%); }
 
-.reveal .slides > section > section.future[data-transition=slide], .reveal .slides > section > section.future[data-transition~=slide-in], .reveal.slide .slides > section > section.future:not([data-transition]) {
+.reveal .slides > section > section[data-transition=slide].future, .reveal .slides > section > section[data-transition~=slide-in].future, .reveal.slide .slides > section > section:not([data-transition]).future {
   transform: translate(0, 150%); }
 
 .reveal.linear section {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.reveal .slides > section.past[data-transition=linear], .reveal .slides > section.past[data-transition~=linear-out], .reveal.linear .slides > section.past:not([data-transition]) {
+.reveal .slides > section[data-transition=linear].past, .reveal .slides > section[data-transition~=linear-out].past, .reveal.linear .slides > section:not([data-transition]).past {
   transform: translate(-150%, 0); }
 
-.reveal .slides > section.future[data-transition=linear], .reveal .slides > section.future[data-transition~=linear-in], .reveal.linear .slides > section.future:not([data-transition]) {
+.reveal .slides > section[data-transition=linear].future, .reveal .slides > section[data-transition~=linear-in].future, .reveal.linear .slides > section:not([data-transition]).future {
   transform: translate(150%, 0); }
 
-.reveal .slides > section > section.past[data-transition=linear], .reveal .slides > section > section.past[data-transition~=linear-out], .reveal.linear .slides > section > section.past:not([data-transition]) {
+.reveal .slides > section > section[data-transition=linear].past, .reveal .slides > section > section[data-transition~=linear-out].past, .reveal.linear .slides > section > section:not([data-transition]).past {
   transform: translate(0, -150%); }
 
-.reveal .slides > section > section.future[data-transition=linear], .reveal .slides > section > section.future[data-transition~=linear-in], .reveal.linear .slides > section > section.future:not([data-transition]) {
+.reveal .slides > section > section[data-transition=linear].future, .reveal .slides > section > section[data-transition~=linear-in].future, .reveal.linear .slides > section > section:not([data-transition]).future {
   transform: translate(0, 150%); }
 
-.reveal .slides section.stack[data-transition=default], .reveal.default .slides section.stack {
+.reveal .slides section[data-transition=default].stack, .reveal.default .slides section.stack {
   transform-style: preserve-3d; }
 
-.reveal .slides > section.past[data-transition=default], .reveal .slides > section.past[data-transition~=default-out], .reveal.default .slides > section.past:not([data-transition]) {
+.reveal .slides > section[data-transition=default].past, .reveal .slides > section[data-transition~=default-out].past, .reveal.default .slides > section:not([data-transition]).past {
   transform: translate3d(-100%, 0, 0) rotateY(-90deg) translate3d(-100%, 0, 0); }
 
-.reveal .slides > section.future[data-transition=default], .reveal .slides > section.future[data-transition~=default-in], .reveal.default .slides > section.future:not([data-transition]) {
+.reveal .slides > section[data-transition=default].future, .reveal .slides > section[data-transition~=default-in].future, .reveal.default .slides > section:not([data-transition]).future {
   transform: translate3d(100%, 0, 0) rotateY(90deg) translate3d(100%, 0, 0); }
 
-.reveal .slides > section > section.past[data-transition=default], .reveal .slides > section > section.past[data-transition~=default-out], .reveal.default .slides > section > section.past:not([data-transition]) {
+.reveal .slides > section > section[data-transition=default].past, .reveal .slides > section > section[data-transition~=default-out].past, .reveal.default .slides > section > section:not([data-transition]).past {
   transform: translate3d(0, -300px, 0) rotateX(70deg) translate3d(0, -300px, 0); }
 
-.reveal .slides > section > section.future[data-transition=default], .reveal .slides > section > section.future[data-transition~=default-in], .reveal.default .slides > section > section.future:not([data-transition]) {
+.reveal .slides > section > section[data-transition=default].future, .reveal .slides > section > section[data-transition~=default-in].future, .reveal.default .slides > section > section:not([data-transition]).future {
   transform: translate3d(0, 300px, 0) rotateX(-70deg) translate3d(0, 300px, 0); }
 
-.reveal .slides section.stack[data-transition=convex], .reveal.convex .slides section.stack {
+.reveal .slides section[data-transition=convex].stack, .reveal.convex .slides section.stack {
   transform-style: preserve-3d; }
 
-.reveal .slides > section.past[data-transition=convex], .reveal .slides > section.past[data-transition~=convex-out], .reveal.convex .slides > section.past:not([data-transition]) {
+.reveal .slides > section[data-transition=convex].past, .reveal .slides > section[data-transition~=convex-out].past, .reveal.convex .slides > section:not([data-transition]).past {
   transform: translate3d(-100%, 0, 0) rotateY(-90deg) translate3d(-100%, 0, 0); }
 
-.reveal .slides > section.future[data-transition=convex], .reveal .slides > section.future[data-transition~=convex-in], .reveal.convex .slides > section.future:not([data-transition]) {
+.reveal .slides > section[data-transition=convex].future, .reveal .slides > section[data-transition~=convex-in].future, .reveal.convex .slides > section:not([data-transition]).future {
   transform: translate3d(100%, 0, 0) rotateY(90deg) translate3d(100%, 0, 0); }
 
-.reveal .slides > section > section.past[data-transition=convex], .reveal .slides > section > section.past[data-transition~=convex-out], .reveal.convex .slides > section > section.past:not([data-transition]) {
+.reveal .slides > section > section[data-transition=convex].past, .reveal .slides > section > section[data-transition~=convex-out].past, .reveal.convex .slides > section > section:not([data-transition]).past {
   transform: translate3d(0, -300px, 0) rotateX(70deg) translate3d(0, -300px, 0); }
 
-.reveal .slides > section > section.future[data-transition=convex], .reveal .slides > section > section.future[data-transition~=convex-in], .reveal.convex .slides > section > section.future:not([data-transition]) {
+.reveal .slides > section > section[data-transition=convex].future, .reveal .slides > section > section[data-transition~=convex-in].future, .reveal.convex .slides > section > section:not([data-transition]).future {
   transform: translate3d(0, 300px, 0) rotateX(-70deg) translate3d(0, 300px, 0); }
 
-.reveal .slides section.stack[data-transition=concave], .reveal.concave .slides section.stack {
+.reveal .slides section[data-transition=concave].stack, .reveal.concave .slides section.stack {
   transform-style: preserve-3d; }
 
-.reveal .slides > section.past[data-transition=concave], .reveal .slides > section.past[data-transition~=concave-out], .reveal.concave .slides > section.past:not([data-transition]) {
+.reveal .slides > section[data-transition=concave].past, .reveal .slides > section[data-transition~=concave-out].past, .reveal.concave .slides > section:not([data-transition]).past {
   transform: translate3d(-100%, 0, 0) rotateY(90deg) translate3d(-100%, 0, 0); }
 
-.reveal .slides > section.future[data-transition=concave], .reveal .slides > section.future[data-transition~=concave-in], .reveal.concave .slides > section.future:not([data-transition]) {
+.reveal .slides > section[data-transition=concave].future, .reveal .slides > section[data-transition~=concave-in].future, .reveal.concave .slides > section:not([data-transition]).future {
   transform: translate3d(100%, 0, 0) rotateY(-90deg) translate3d(100%, 0, 0); }
 
-.reveal .slides > section > section.past[data-transition=concave], .reveal .slides > section > section.past[data-transition~=concave-out], .reveal.concave .slides > section > section.past:not([data-transition]) {
+.reveal .slides > section > section[data-transition=concave].past, .reveal .slides > section > section[data-transition~=concave-out].past, .reveal.concave .slides > section > section:not([data-transition]).past {
   transform: translate3d(0, -80%, 0) rotateX(-70deg) translate3d(0, -80%, 0); }
 
-.reveal .slides > section > section.future[data-transition=concave], .reveal .slides > section > section.future[data-transition~=concave-in], .reveal.concave .slides > section > section.future:not([data-transition]) {
+.reveal .slides > section > section[data-transition=concave].future, .reveal .slides > section > section[data-transition~=concave-in].future, .reveal.concave .slides > section > section:not([data-transition]).future {
   transform: translate3d(0, 80%, 0) rotateX(70deg) translate3d(0, 80%, 0); }
 
 .reveal .slides section[data-transition=zoom], .reveal.zoom .slides section:not([data-transition]) {
   transition-timing-function: ease; }
 
-.reveal .slides > section.past[data-transition=zoom], .reveal .slides > section.past[data-transition~=zoom-out], .reveal.zoom .slides > section.past:not([data-transition]) {
+.reveal .slides > section[data-transition=zoom].past, .reveal .slides > section[data-transition~=zoom-out].past, .reveal.zoom .slides > section:not([data-transition]).past {
   visibility: hidden;
   transform: scale(16); }
 
-.reveal .slides > section.future[data-transition=zoom], .reveal .slides > section.future[data-transition~=zoom-in], .reveal.zoom .slides > section.future:not([data-transition]) {
+.reveal .slides > section[data-transition=zoom].future, .reveal .slides > section[data-transition~=zoom-in].future, .reveal.zoom .slides > section:not([data-transition]).future {
   visibility: hidden;
   transform: scale(0.2); }
 
-.reveal .slides > section > section.past[data-transition=zoom], .reveal .slides > section > section.past[data-transition~=zoom-out], .reveal.zoom .slides > section > section.past:not([data-transition]) {
+.reveal .slides > section > section[data-transition=zoom].past, .reveal .slides > section > section[data-transition~=zoom-out].past, .reveal.zoom .slides > section > section:not([data-transition]).past {
   transform: scale(16); }
 
-.reveal .slides > section > section.future[data-transition=zoom], .reveal .slides > section > section.future[data-transition~=zoom-in], .reveal.zoom .slides > section > section.future:not([data-transition]) {
+.reveal .slides > section > section[data-transition=zoom].future, .reveal .slides > section > section[data-transition~=zoom-in].future, .reveal.zoom .slides > section > section:not([data-transition]).future {
   transform: scale(0.2); }
 
 .reveal.cube .slides {
@@ -17707,7 +17889,7 @@ html.reveal-full-page {
 .reveal.overview .backgrounds .slide-background, .reveal.overview-deactivating .backgrounds .slide-background {
   transition: none; }
 
-.reveal.rtl .slides, .reveal.rtl .slides h1, .reveal.rtl .slides h2, .reveal.rtl .slides h3, .reveal.rtl .slides h4, .reveal.rtl .slides h5, .reveal.rtl .slides h6 {
+.reveal.rtl .slides, .reveal.rtl .slides h1, .reveal.rtl .slides h2, .reveal.rtl .slides .about .date, .about .reveal.rtl .slides .date, .reveal.rtl .slides .syllabus .date, .syllabus .reveal.rtl .slides .date, .reveal.rtl .slides .backlog .date, .backlog .reveal.rtl .slides .date, .reveal.rtl .slides h3, .reveal.rtl .slides h4, .reveal.rtl .slides h5, .reveal.rtl .slides h6 {
   direction: rtl;
   font-family: sans-serif; }
 
@@ -17893,7 +18075,7 @@ html.reveal-full-page {
 .reveal .hljs.has-highlights tr:not(.highlight-line) {
   opacity: .4; }
 
-.reveal .hljs.fragment:not(:first-child) {
+.reveal .hljs:not(:first-child).fragment {
   position: absolute;
   top: 0;
   left: 0;
@@ -18166,7 +18348,7 @@ html.print-pdf .aria-status {
   html:not(.print-pdf) body, html:not(.print-pdf) li, html:not(.print-pdf) p, html:not(.print-pdf) td {
     font-size: 20pt !important;
     color: #000; }
-  html:not(.print-pdf) h1, html:not(.print-pdf) h2, html:not(.print-pdf) h3, html:not(.print-pdf) h4, html:not(.print-pdf) h5, html:not(.print-pdf) h6 {
+  html:not(.print-pdf) h1, html:not(.print-pdf) h2, html:not(.print-pdf) .about .date, .about html:not(.print-pdf) .date, html:not(.print-pdf) .syllabus .date, .syllabus html:not(.print-pdf) .date, html:not(.print-pdf) .backlog .date, .backlog html:not(.print-pdf) .date, html:not(.print-pdf) h3, html:not(.print-pdf) h4, html:not(.print-pdf) h5, html:not(.print-pdf) h6 {
     color: #000 !important;
     height: auto;
     line-height: normal;
@@ -18174,7 +18356,7 @@ html.print-pdf .aria-status {
     letter-spacing: normal; }
   html:not(.print-pdf) h1 {
     font-size: 28pt !important; }
-  html:not(.print-pdf) h2 {
+  html:not(.print-pdf) h2, html:not(.print-pdf) .about .date, .about html:not(.print-pdf) .date, html:not(.print-pdf) .syllabus .date, .syllabus html:not(.print-pdf) .date, html:not(.print-pdf) .backlog .date, .backlog html:not(.print-pdf) .date {
     font-size: 24pt !important; }
   html:not(.print-pdf) h3 {
     font-size: 22pt !important; }
@@ -18268,7 +18450,7 @@ html.print-pdf .aria-status {
     font-size: inherit !important;
     color: inherit !important; } }
 
-html.slide h1, html.slide h2, html.slide h3, html.slide h4 {
+html.slide h1, html.slide h2, html.slide .about .date, .about html.slide .date, html.slide .syllabus .date, .syllabus html.slide .date, html.slide .backlog .date, .backlog html.slide .date, html.slide h3, html.slide h4 {
   display: inline;
   background: var(--color-bg);
   box-shadow: 10px 0 0 var(--color-bg), -10px 0 0 var(--color-bg);
@@ -18277,10 +18459,10 @@ html.slide h1, html.slide h2, html.slide h3, html.slide h4 {
   padding-top: 10px;
   box-decoration-break: clone; }
 
-html.firefox html.slide h1, html.firefox html.slide h2, html.firefox html.slide h3, html.firefox html.slide h4 {
+html.firefox html.slide h1, html.firefox html.slide h2, html.firefox html.slide .about .date, .about html.firefox html.slide .date, html.firefox html.slide .syllabus .date, .syllabus html.firefox html.slide .date, html.firefox html.slide .backlog .date, .backlog html.firefox html.slide .date, html.firefox html.slide h3, html.firefox html.slide h4 {
   padding-top: 13px; }
 
-html.slide h1::after, html.slide h2::after, html.slide h3::after, html.slide h4::after {
+html.slide h1::after, html.slide h2::after, html.slide .about .date::after, .about html.slide .date::after, html.slide .syllabus .date::after, .syllabus html.slide .date::after, html.slide .backlog .date::after, .backlog html.slide .date::after, html.slide h3::after, html.slide h4::after {
   content: "";
   display: block;
   height: 0px;
@@ -18340,7 +18522,7 @@ html.slide section .grid {
   grid-template-columns: 1fr 1fr;
   grid-gap: var(--gap-2); }
 
-html.slide section h1, html.slide section h2 tt, html.slide section h3 tt {
+html.slide section h1, html.slide section h2 tt, html.slide section .about .date tt, .about html.slide section .date tt, html.slide section .syllabus .date tt, .syllabus html.slide section .date tt, html.slide section .backlog .date tt, .backlog html.slide section .date tt, html.slide section h3 tt {
   text-transform: uppercase; }
 
 html.slide tt {
@@ -18365,14 +18547,14 @@ html.slide .reveal {
   word-wrap: break-word;
   color: var(--color-fg); }
 
-html.slide .reveal h1, html.slide .reveal h2, html.slide .reveal h3, html.slide .reveal h4, html.slide .reveal h5, html.slide .reveal h6 {
+html.slide .reveal h1, html.slide .reveal h2, html.slide .reveal .about .date, .about html.slide .reveal .date, html.slide .reveal .syllabus .date, .syllabus html.slide .reveal .date, html.slide .reveal .backlog .date, .backlog html.slide .reveal .date, html.slide .reveal h3, html.slide .reveal h4, html.slide .reveal h5, html.slide .reveal h6 {
   color: var(--color-fg);
   line-height: 110%; }
 
 html.slide .reveal h1 {
   font-size: 3.77em; }
 
-html.slide .reveal h2 {
+html.slide .reveal h2, html.slide .reveal .about .date, .about html.slide .reveal .date, html.slide .reveal .syllabus .date, .syllabus html.slide .reveal .date, html.slide .reveal .backlog .date, .backlog html.slide .reveal .date {
   font-size: 2.11em; }
 
 html.slide .reveal h3 {
@@ -18731,7 +18913,7 @@ html.firefox html.slide .status {
 .cover h1 {
   font-size: 4em !important; }
 
-.cover h2 {
+.cover h2, .cover .about .date, .about .cover .date, .cover .syllabus .date, .syllabus .cover .date, .cover .backlog .date, .backlog .cover .date {
   font-size: 2em !important; }
 
 .cover h3 {
@@ -19143,5 +19325,73 @@ html.firefox a[data-toggle="popover"]:hover {
   width: 50px;
   float: left;
   margin-left: -100px; }
+
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans/OpenSans-Regular.svg#OpenSans") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: transform; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: OpenSans;
+    src: url("../fonts/OpenSans/OpenSans-Regular.svg#OpenSans") format("svg"); } }
+
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans/OpenSans-SemiBold.eot");
+  src: url("../fonts/OpenSans/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype"), url("../fonts/OpenSans/OpenSans-SemiBold.svg#OpenSans") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: transform; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: OpenSans;
+    src: url("../fonts/OpenSans/OpenSans-SemiBold.svg#OpenSans") format("svg"); } }
+
+.wiley-table * {
+  font-family: OpenSans;
+  font-size: 14px;
+  text-align: left;
+  line-height: 125%; }
+
+.wiley-table * article.main {
+  width: 1000px !important;
+  margin-left: -300px; }
+
+.wiley-table * .h2 {
+  font-size: 30px;
+  color: #005274;
+  margin-top: 60px !important;
+  display: block; }
+
+.wiley-table * .background, .wiley-table * header.header, .wiley-table * .fixed {
+  displaY: none; }
+
+.wiley-table * a {
+  color: #005274; }
+
+.wiley-table * a:hover {
+  color: #2B7999; }
+
+.wiley-table * td, .wiley-table * th {
+  vertical-align: top;
+  padding-top: 15px;
+  padding-right: 30px;
+  word-break: break-word; }
+
+.wiley-table * td.title, .wiley-table * th.title {
+  word-break: break-all; }
+
+.wiley-table * td.size, .wiley-table * th.size {
+  word-break: keep-all; }
+
+.wiley-table * td.designation, .wiley-table * th.designation {
+  width: 230px; }
 
 /*# sourceMappingURL=main.css.map */
